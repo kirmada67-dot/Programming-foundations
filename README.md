@@ -5,6 +5,7 @@ It mainly consists of:
 2. C (only for academics)
 3. C++ (only for lab practicals and academics)
 4. bash (learnt during initial stages of linux for small automations)
+5. java (only for lab practicals and academics)
 
 As I learn and make any changes in codes or create new codes all will be updated here on my learning basis. 
    
