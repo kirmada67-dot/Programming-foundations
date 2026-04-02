@@ -26,3 +26,7 @@ else:
 print("prediction: ", pred)
 print("MSE: ", mean_squared_error(test_result_data, pred))
 print("r2_score: ", r2_score(test_result_data, pred))
+impfeatures = model.feature_importances_
+print("Feature Importances: ")
+for m, p in zip(x, impfeatures):
+	print(f"{m}: {p}")
