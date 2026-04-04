@@ -8,7 +8,7 @@ df = pn.read_csv("../dummy_data/problem1.csv")
 x = df[["area", "rooms", "age"]]
 y = df["rent"]
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=69)
-model = GradientBoostingRegressor(n_estimators=1000, learning_rate=0.01, max_depth=2, random_state=69)
+model = GradientBoostingRegressor(n_estimators=5000, learning_rate=0.01, max_depth=2, random_state=42)
 
 model.fit(x_train, y_train)
 pred_train = model.predict(x_train)
@@ -23,3 +23,8 @@ print("Test predictions: ", pred_test)
 print("Test MSE: ", mean_squared_error(y_test, pred_test))
 print("Test r2_score: ", r2_score(y_test, pred_test))
 
+
+
+
+
+2
