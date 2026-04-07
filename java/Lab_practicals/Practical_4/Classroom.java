@@ -1,18 +1,19 @@
-class student {
-	student(int a);
+class Student {
+	String name;
 	private int age;
-	char name = a;
-
+	Student(String a) {
+		name = a;
+	}
 	void setage(int i) {
 		if (i > 0) {
 			age = i;
 		}
 	}
-	int getage {
+	int getage() {
 		return age;
 	}
 
-	void displaydata {
+	void displaydata() {
 		System.out.println("Name: " + name);
 		System.out.println("Age: " + age);
 	}
@@ -21,9 +22,9 @@ class student {
 public class Classroom {
 
 	public static void main(String[] args) {
-		student s1 = new student(Mihir);
+		Student s1 = new Student("Prem");
 		s1.setage(20);
-		s1.displaydata;
+		s1.displaydata();
 	}
 }
 

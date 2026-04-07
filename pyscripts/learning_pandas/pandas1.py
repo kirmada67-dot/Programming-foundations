@@ -55,4 +55,4 @@ print(df[df["score"] >= 85])
 
 print(df.groupby("age")["score"].mean())
 print(df.groupby("grade")["name"].count())
-print(df)
+#print(df)
