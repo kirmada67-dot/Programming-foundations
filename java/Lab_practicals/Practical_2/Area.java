@@ -13,6 +13,7 @@ class FindArea {
 
 	int perimeter(int s) {
 		return s * 4;
+	}
 }
 
 public class Area {
